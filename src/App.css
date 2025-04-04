@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  background-color: #f0f2f5; /* Light background for the entire app */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ant-card {
+  border-radius: 12px; /* Rounded corners for cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ant-btn-primary {
+  background-color: #002547; /* Primary button color */
+  border-color: #002547; /* Button border color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ant-btn-primary:hover {
+  background-color: #FF4F00 !important; /* Primary button color */
+  border-color: #FF4F00; /* Button border color */
 }
 
-.App-link {
-  color: #61dafb;
+.ant-btn-link {
+  color: #ff4d4f; /* Danger button color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Header Menu Styling */
+.ant-menu-light .ant-menu-item {
+  color: #002547 !important;
+}
+
+.ant-menu-light .ant-menu-item:hover {
+  color: #FF4F00 !important;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+  color: #FF4F00 !important;
+}
+
+.ant-menu-light .ant-menu-item:hover::after {
+  border-bottom-color: #FF4F00 !important;
+}
+
+.ant-menu-light .ant-menu-item-selected::after {
+  border-bottom-color: #FF4F00 !important;
 }
